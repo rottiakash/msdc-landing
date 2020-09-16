@@ -30,7 +30,7 @@ const Slider2: React.FunctionComponent<Slider2Props> = () => {
           threshold={1}
         >
           <div className={visible ? styles.introtext : styles.hide}>
-            Your Safety is Important to us
+            Your Safety is our Priority
           </div>
         </InView>
         <Cards visible={visible} />
