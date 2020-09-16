@@ -18,6 +18,8 @@
   font-family: "El Messiri", sans-serif;
 }
 
+/* Desktop Only CSS */
+
 @media only screen and (min-width: 768px) {
   .background {
     display: flex;
