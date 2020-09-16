@@ -24,8 +24,8 @@
   opacity: 0%;
   font-family: "DM Mono", monospace;
   animation-name: appear;
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
