@@ -9,16 +9,17 @@
 @media only screen and (min-width: 768px) {
   @keyframes zoomin {
     from {
-      font-size: 0vw;
+      opacity: 0%;
     }
     to {
-      font-size: 4vw;
+      opacity: 100%;
     }
   }
 }
 .introtext {
   margin-top: 100px;
-  font-size: 0vw;
+  opacity: 0%;
+  font-size: 4vw;
   animation: zoomin 2s forwards;
   font-family: "Teko", sans-serif;
 }

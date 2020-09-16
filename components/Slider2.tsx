@@ -1,9 +1,11 @@
 export interface Slider2Props {}
 import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
+import Cards from "./Cards";
 import styles from "./Slider2.module.css";
 const Slider2: React.FunctionComponent<Slider2Props> = () => {
   const [visible, set] = useState(false);
+  const [done, setDone] = useState(false);
   return (
     <div
       style={{
@@ -18,11 +20,20 @@ const Slider2: React.FunctionComponent<Slider2Props> = () => {
           height: "100%",
         }}
       >
-        <InView onChange={(inView, entry) => set(inView)} threshold={1}>
+        <InView
+          onChange={(inView, entry) => {
+            if (!done) {
+              set(inView);
+              if (inView) setDone(true);
+            }
+          }}
+          threshold={1}
+        >
           <div className={visible ? styles.introtext : styles.hide}>
             Your Safety is Important to us
           </div>
         </InView>
+        <Cards visible={visible} />
       </div>
     </div>
   );
