@@ -1,0 +1,36 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("/mobile.jpg");
+  background-size: 100% auto;
+}
+
+.title {
+  font-size: 25vw;
+  font-family: "El Messiri", sans-serif;
+}
+.subtitle {
+  font-size: 5vw;
+  font-family: "El Messiri", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("/desktop.jpg");
+    background-size: 100% auto;
+  }
+  .title {
+    font-size: 15vw;
+    font-family: "El Messiri", sans-serif;
+  }
+}
